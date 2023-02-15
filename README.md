@@ -40,6 +40,7 @@ To use BarberBooking, follow these steps:
 
 6. Barbers can manage their schedules and appointments, and select days off.
 
+<img width="200" alt="צילום מסך 2023-02-15 ב-19 46 17" src="https://user-images.githubusercontent.com/98718286/219123830-b0187e66-2642-4fa1-a5f1-4ba3ffe06eb2.png">
 
 
 ## Developers
@@ -47,3 +48,11 @@ To use BarberBooking, follow these steps:
 Aviram Avivi
 
 Raz Rachman
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Enjoy!
+
+Login:
+<img width="200" alt="צילום מסך 2023-02-15 ב-19 46 17" src="https://user-images.githubusercontent.com/98718286/219123830-b0187e66-2642-4fa1-a5f1-4ba3ffe06eb2.png">
+
+
