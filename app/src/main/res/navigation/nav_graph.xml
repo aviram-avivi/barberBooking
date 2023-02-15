@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/navigation_meetings"
+        android:name="com.example.barberbooking.ui.meetings.MeetingsFragment"
+        android:label="Meetings"
+        tools:layout="@layout/fragment_meetings" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.barberbooking.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <argument
+            android:name="client"
+            app:argType="com.example.barberbooking.Client"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_showBarberFragment"
+            app:destination="@id/showBarberFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.barberbooking.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.barberbooking.ui.register.RegisterFragment"
+        tools:layout="@layout/fragment_register"
+        android:label="Register" >
+        <action
+            android:id="@+id/action_registerFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.barberbooking.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <action
+            android:id="@+id/action_loginFragment_to_barberDashboardFragment"
+            app:destination="@id/barberDashboardFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/showBarberFragment"
+        android:name="com.example.barberbooking.ui.show_barber.ShowBarberFragment"
+        android:label="Barber"
+        tools:layout="@layout/fragment_show_barber" >
+        <argument
+            android:name="barber"
+            app:argType="com.example.barberbooking.Barber"
+            app:nullable="true" />
+        <argument
+            android:name="client"
+            app:argType="com.example.barberbooking.Client"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/barberDashboardFragment"
+        android:name="com.example.barberbooking.ui.barberdashboard.BarberDashboardFragment"
+        android:label="fragment_barber_dashboard"
+        tools:layout="@layout/fragment_barber_dashboard" />
+
+
+</navigation>
