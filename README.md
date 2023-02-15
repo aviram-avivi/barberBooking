@@ -40,7 +40,6 @@ To use BarberBooking, follow these steps:
 
 6. Barbers can manage their schedules and appointments, and select days off.
 
-![BarberBooking Logo](https://freeimage.host/i/HG9LlP1)
 
 
 ## Developers
